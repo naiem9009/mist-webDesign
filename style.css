@@ -179,12 +179,12 @@
     background: #F3F0FD;
     padding-bottom: 100px;
 }
-.cByCat_header, .populer_courses_header, .top_teachers_header, .facilites_header {
+.cByCat_header, .populer_courses_header, .top_teachers_header, .facilites_header, .whyChooseHeader, .aboutMistHeader {
     text-align: center;
     font-size: 25px;
     margin-bottom: 80px;
 }
-.cByCat_header > p, .populer_courses_header> p, .top_teachers_header > p, .facilites_header > p {
+.cByCat_header > p, .populer_courses_header> p, .top_teachers_header > p, .facilites_header > p, .whyChooseHeader > p {
     font-size: 14px;
     font-weight: 100;
     margin-top: 5px;
@@ -219,7 +219,8 @@
 
 }
 .populer_courses_list {
-    column-count: 4;
+    column-count: 3;
+    margin-bottom: 50px;
 }
 .populer_courses_bottom_content {
     padding: 20px;
@@ -227,10 +228,13 @@
 }
 .populer_courses {
     background-color: #ffff;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
+    width: 90%;
+    margin-left: 50%;
     border-radius: 10px;
     box-shadow: -3px 5px 3px 0px #b3b3b3;
+    transform: translateX(-50%);
 }
 .populer_courses > img {
     width: 100%;
@@ -259,6 +263,23 @@
 }
 .populer_courses_bottom_content > button:hover {
     background-color: #54bdfa;
+}
+.courses_seeMoreBtn {
+    text-align: center;
+}
+.courses_seeMoreBtn > a {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 100px;
+    border: 1px solid #1FAEFE;
+    transition: all 0.3s ease-in-out;  
+} 
+.courses_seeMoreBtn > a:hover {
+    background-color: #54bdfa;
+    color: white;
 }
 
 
@@ -299,13 +320,14 @@
     box-sizing: border-box;
     margin-right: 50px;
     border: 1px solid #D6D6D6;
+    border-radius: 10px;
 }
 .teachers_card:last-child {
     margin-right: 0;
 }
 .teachers_card > img {
     width: 80%;
-    height: 50%;
+    height: 100%;
     border-radius: 50%;
 }
 .teacher_card_bottom_content {
@@ -342,4 +364,189 @@
     background-color: #E9F8FF;
 }
 
-/* ourFacilities css end */
+.facilites_list {
+    column-count: 2;
+    margin-left: 40%;
+    transform: translate(-50%);
+    column-gap: 500px;
+    margin-top: 100px;
+}
+.facilites_card {
+    margin-bottom: 100px;
+    width: 300px;
+    color: #0056D8;
+}
+.facilites_card > p {
+    width: 200px;
+    color: #3a3a3a;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+    line-height: 20px;
+}
+.facilites_card:nth-child(3) {
+    position: relative;
+}
+
+.facilites_card:nth-child(3)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 5px;
+    height: 100%;
+    background-color: red;
+}
+
+/* ourFacilities css start end*/
+
+/* whyChoose css start */
+#whyChoose, #aboutMist {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.whyChooseContent {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyChoose_limg {
+    width: 150%;
+    height: auto;
+}
+.whyChoose_limg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: -8px 10px 9px #99d8eb;
+}
+.whyChoose_rcontent, .aboutMist_rcontent {
+    margin-left: 100px;
+    line-height: 40px;
+}
+.whyChoose_rcontent > h1, .aboutMist_rcontent > h1 {
+    margin-bottom: 20px;
+    color: #0aa9f3;
+    font-size: 25px;
+}
+.whyChoose_rcontent > p, .aboutMist_rcontent > p {
+    color: #4b4b4b;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+.whyChoose_rcontent > span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1175AD;
+}
+.signeture_main {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.signeture_main img {
+    width: 100px;
+    height: 100%;
+    margin-right: 20px;
+}
+.signeture_content > p {
+    color: #4b4b4b;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 15px;
+}
+/* whyChoose css end */
+
+
+/* aboutMist css */
+.aboutMistContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.aboutMist_limg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 6px 3px 9px #999999;
+}
+.aboutMist_rcontent {
+    width: 90%;
+    margin-right: 100px;
+}
+.about_contact_btn a{
+    padding: 15px 22px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #22A0FB;
+    border-radius: 100px;
+}
+/* aboutMist end */
+
+
+/* FOOTER css */
+#FOOTER {
+    background: #292929;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.footer_card_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer_card {
+    width: 20%;
+    margin-right: 10%;
+    color: #ffffff;
+}
+.footer_header h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.footer_header p {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.footer_card > p {
+    font-weight: 800;
+    font-size: 15px;
+}
+.footer_social_link a {
+    display: block;
+    margin-top: 20px;
+}
+.footer_social_link a {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.footer_social_link a:hover {
+    text-decoration: underline;
+    color: #fc7c7c;
+}
+
+.bottom_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom_footer {
+    color: #ffffff;
+}
+.footer_copy {
+    font-weight: 800;
+}
+
+/* FOOTER css end*/
