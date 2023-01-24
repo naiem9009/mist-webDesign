@@ -35,6 +35,9 @@
     left: 0;
     top: 25px;
 }
+.navIcon {
+    display: none;
+}
 .my_nav {
     display: flex;
     justify-content: space-between;
@@ -153,6 +156,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.next_icon, .next_iconTwo {
+    display: none;
 }
 .pls_card {
     width: 30%;
