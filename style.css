@@ -8,6 +8,7 @@
 #NAVBAR {
     margin-bottom: 10px;
     position: relative;
+
 }
 
 .xcontainer {
@@ -22,6 +23,7 @@
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 20px;
+    color: #505050;
 }
 .top_contact::after {
     content: '';
@@ -32,6 +34,9 @@
     position: absolute;
     left: 0;
     top: 25px;
+}
+.navIcon {
+    display: none;
 }
 .my_nav {
     display: flex;
@@ -46,13 +51,20 @@
 .nav_list ul > li:last-child {
     padding-right: 0;
 }
+.nav_list ul > li a {
+    color: #0181bd;
+    transition: all 0.2s ease-in-out;
+}
+.nav_list ul > li a:hover {
+    color: #fa770c;
+}
 /* navbar css end*/
 
 
 /* home slide css */
 #homeSlide {
     background: radial-gradient(circle, #4a4a4a87 40%, #323232d4 75%), linear-gradient(to right, #662424, #18020200),
-    url(./mangrove-image.jpg);
+    url(../mangrove-image.jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -144,6 +156,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.next_icon, .next_iconTwo {
+    display: none;
 }
 .pls_card {
     width: 30%;
@@ -521,7 +536,7 @@
     margin-bottom: 20px;
 }
 .footer_card > p {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 15px;
 }
 .footer_social_link a {
