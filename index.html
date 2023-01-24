@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!-- FontAwesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom responsive css file -->
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css//responsive//responsive_phone.css">
 
 
     <title>Mangrove institute Of Science And Technology</title>
@@ -25,7 +33,13 @@
                 <div class="mylogo">
                     <h1>MIST</h1>
                 </div>
+                <div class="navIcon">
+                    <i></i>
+                </div>
                 <div class="nav_list">
+                    <div class="navIcon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
@@ -73,7 +87,7 @@
                     </div>
                     <div class="sft">
                         <h3>30+</h3>
-                        <p>Modern Lab</p>
+                        <p>Lab</p>
                     </div>
                     <div class="sft">
                         <h3>3000+</h3>
@@ -93,8 +107,12 @@
 
     <section id="CLGPLS">
         <div class="xcontainer">
+            <div class="next_icon">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </div>
+
             <div class="clgpls_all">
-                <div class="pls_card">
+                <div class="pls_card showPls_card">
                     <h3>Our Program</h3>
                     <p>The Mangrove Institute currently offers
                         4-year Diploma in Engineering courses in
@@ -117,6 +135,9 @@
                         4000/- BDT stipend per semester from
                         the Government of Bangladesh.</p>
                 </div>
+            </div>
+            <div class="next_iconTwo">
+                <i class="fa-solid fa-circle-chevron-right"></i>
             </div>
         </div>
     </section>
@@ -170,7 +191,7 @@
                             <button>APPLY NOW</button>
                         </div>
                     </div>
-                    <div class="populer_courses">
+                    <div class="populer_courses showPopuler_courses">
                         <img src="./images/autoMob_tech.jpg" alt="">
                         <div class="populer_courses_bottom_content">
                             <h3>This is an algorithic</h3>
@@ -178,7 +199,7 @@
                             <button>APPLY NOW</button>
                         </div>
                     </div>
-                    <div class="populer_courses">
+                    <div class="populer_courses showPopuler_courses">
                         <img src="./images/textile_tech.png" alt="">
                         <div class="populer_courses_bottom_content">
                             <h3>This is an algorithic</h3>
@@ -221,8 +242,8 @@
     <section id="topRated_teachers">
         <div class="xcontainer">
             <div class="top_teachers_header">
-                <h3>Our Top Rated Teachers</h3>
-                <p>Find your perfect teacher</p>
+                <h3>Our Top Teachers</h3>
+                <p>Find your perfect techer</p>
             </div>
     
             <div class="all_teachersBtn">
@@ -230,7 +251,7 @@
             </div>
     
             <div class="top_teachers">
-                <div class="teachers_card">
+                <div class="teachers_card teachers_cardShow">
                     <img src="./images/teacher_mahsin.jpg" alt="">
                     <div class="teacher_card_bottom_content">
                         <h3>Muhammad Mohsin Sajol </h3>
@@ -337,7 +358,7 @@
     <section id="aboutMist">
         <div class="xcontainer">
             <div class="aboutMistHeader">
-                <h3>About the MIST</h3>
+                <h3>About MIST</h3>
             </div>
 
             <div class="aboutMistContent">

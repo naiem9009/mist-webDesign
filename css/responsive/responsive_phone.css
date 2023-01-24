@@ -1,0 +1,134 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav_list > ul {
+        display: none;
+    } 
+    .navIcon {
+        color: #0b9bdd;
+        font-size: 18px;
+    }
+    .home_head {
+        font-size: 20px;
+        color: #ffb37c;
+        font-weight: 800;
+    }
+    .home_head p:first-child {
+        font-size: 40px;
+    }
+    .home_content {
+        margin-top: 10px;
+        color: #ffff;
+        margin-bottom: 50px;
+        font-size: 14px;
+        width: 400px;
+    }
+    .home_btn > a {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+    .clssft_all {
+        font-size: 20px;
+        padding: 30px 50px;
+    }
+    #CLGSFT {
+        bottom: -50px;
+    }
+
+
+
+    .pls_card {
+        width: 50%;
+        display: none;
+    }
+    .pls_card > p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .showPls_card {
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    #CLGPLS {
+        position: relative;
+    }
+    .next_icon {
+        position: absolute;
+        left: 20%;
+        top: 30%;
+        font-size: 25px;
+        color: blueviolet;
+    }
+    .next_iconTwo {
+        position: absolute;
+        right: 20%;
+        top: 30%;
+        font-size: 25px;
+        color: blueviolet;
+
+    }
+    .next_icon:hover, .next_iconTwo:hover {
+        color : #1fb6fc;
+    }
+    .cByCat_header, .populer_courses_header, .top_teachers_header, .facilites_header, .whyChooseHeader, .aboutMistHeader {
+        font-size: 18px;
+    }
+    .cByCat_header > p, .populer_courses_header> p, .top_teachers_header > p, .facilites_header > p, .whyChooseHeader > p {
+        font-size: 10px;
+    }
+    .coursesByCategory {
+        column-count: 2;
+        line-height: 50px;
+    }
+    .coursesByCategory a {
+        padding: 12px 20px;
+        transition: all 0.3s ease;
+        border-radius: 50px;
+        
+    }
+    .populer_courses_list {
+        column-count: 2;
+    }
+
+    .populer_courses {
+        display: none;
+    }
+    .showPopuler_courses {
+        display: block;
+        width: 100%;
+
+    }
+
+    .all_teachersBtn a {
+        padding: 12px 20px;
+    }
+
+    .teachers_card {
+        display: none;
+    }
+    .teachers_cardShow {
+        display: block;
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        margin-right: 0;
+    }
+    .facilites_list {
+        margin-left: 35%;
+        column-gap: 250px;
+        margin-top: 100px;
+    }
+    .facilites_card > h3 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .facilites_card > p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
